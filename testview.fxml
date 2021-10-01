@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rohan Joshi and Nicholas Cheniara -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListController">
+   <children>
+      <VBox prefHeight="435.0" prefWidth="323.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Song List" textAlignment="CENTER" wrappingWidth="322.13671875" />
+            <ListView fx:id="listView" prefHeight="247.0" prefWidth="323.0" />
+            <TextArea  fx:id="textA" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Button fx:id="deletebutton" layoutX="427.0" layoutY="41.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="editbutton" layoutX="341.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <Button fx:id="addbutton" layoutX="340.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Add" />
+      <Button fx:id="detailbutton" layoutX="427.0" layoutY="85.0" mnemonicParsing="false" text="Details" />
+      <TextField fx:id="songfield" layoutX="330.0" layoutY="218.0" promptText="Enter Song Name: " />
+      <TextField fx:id="albumfield" layoutX="330.0" layoutY="264.0" promptText="Enter Album Name:" />
+      <TextField fx:id="artistfield" layoutX="330.0" layoutY="309.0" promptText="Enter Artist Name:" />
+      <TextField fx:id="yearfield" layoutX="330.0" layoutY="357.0" promptText="Enter Year:" />
+      <Button fx:id="submitbutton" layoutX="378.0" layoutY="130.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="cancelbutton" layoutX="379.0" layoutY="179.0" mnemonicParsing="false" text="Cancel" />
+   </children>
+</AnchorPane>
